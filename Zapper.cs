@@ -37,8 +37,8 @@ namespace rocketRiotv2
             bitmapImage = new BitmapImage(new Uri(spriteName, UriKind.Relative));
             ZapperFill = new ImageBrush(bitmapImage);
             zapper.Fill = ZapperFill;
-            zapper.Height = 50;
-            zapper.Width = 50;
+            zapper.Height = 200;
+            zapper.Width = 200;
             canvas.Children.Add(zapper);
             Canvas.SetTop(zapper, 300);
             Canvas.SetLeft(zapper, 300);
@@ -49,11 +49,11 @@ namespace rocketRiotv2
             bitmapImage = new BitmapImage(new Uri(spriteName, UriKind.Relative));
             ZapperFill = new ImageBrush(bitmapImage);
             zapper.Fill = ZapperFill;
-            zapper.Height = 50;
-            zapper.Width = 50;
+            zapper.Height = 200;
+            zapper.Width = 200;
             Canvas.SetTop(zapper, 300);
             Canvas.SetLeft(zapper, 300);
-            RotateTransform rotate = new RotateTransform(counter2 * 50);
+            RotateTransform rotate = new RotateTransform(counter2 * 5);
             zapper.RenderTransformOrigin = new Point(0.5, 0.5);
             zapper.RenderTransform = rotate;
             canvas.Children.Add(zapper);
